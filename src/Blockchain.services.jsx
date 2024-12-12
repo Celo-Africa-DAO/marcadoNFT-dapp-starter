@@ -1,12 +1,5 @@
 import Web3 from "web3";
-import { setGlobalState, getGlobalState, setAlert } from "./store";
-import abi from "./abis/MarcadoNFT.json";
-import { pinata_secret_api_key, pinata_api_key, jwtToken } from "./constants";
-
-const { ethereum } = window;
-window.web3 = new Web3(ethereum);
-window.web3 = new Web3(window.web3.currentProvider);
-
+import {  setAlert } from "./store";
 const getEtheriumContract = async () => {};
 
 const connectWallet = async () => {};
@@ -31,5 +24,4 @@ const reportError = (error) => {
   throw new Error("No ethereum object.");
 };
 
-export {
-};
+export {};
